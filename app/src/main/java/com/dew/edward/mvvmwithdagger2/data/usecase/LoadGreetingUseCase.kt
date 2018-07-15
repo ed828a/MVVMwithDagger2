@@ -1,4 +1,4 @@
-package com.dew.edward.mvvmwithdagger2.common.domain.interactors
+package com.dew.edward.mvvmwithdagger2.data.usecase
 
 import io.reactivex.Single
 

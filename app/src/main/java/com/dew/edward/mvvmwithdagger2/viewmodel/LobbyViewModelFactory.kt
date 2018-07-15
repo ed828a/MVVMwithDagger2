@@ -1,8 +1,9 @@
-package com.dew.edward.mvvmwithdagger2.lobby
+package com.dew.edward.mvvmwithdagger2.viewmodel
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
-import com.dew.edward.mvvmwithdagger2.common.domain.interactors.LoadCommonGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadCommonGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadLobbyGreetingUseCase
 import com.dew.edward.mvvmwithdagger2.rx.SchedulersFacade
 
 

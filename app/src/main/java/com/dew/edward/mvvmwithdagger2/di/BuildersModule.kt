@@ -1,7 +1,6 @@
 package com.dew.edward.mvvmwithdagger2.di
 
-import com.dew.edward.mvvmwithdagger2.lobby.LobbyModule
-import com.dew.edward.mvvmwithdagger2.lobby.MainActivity
+import com.dew.edward.mvvmwithdagger2.ui.MainActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 

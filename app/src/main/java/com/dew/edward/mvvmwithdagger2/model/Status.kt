@@ -1,4 +1,4 @@
-package com.dew.edward.mvvmwithdagger2.common.viewmodel
+package com.dew.edward.mvvmwithdagger2.model
 
 
 /**

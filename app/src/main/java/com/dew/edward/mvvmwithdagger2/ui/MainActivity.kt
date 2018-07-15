@@ -1,4 +1,4 @@
-package com.dew.edward.mvvmwithdagger2.lobby
+package com.dew.edward.mvvmwithdagger2.ui
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
@@ -9,8 +9,10 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import com.dew.edward.mvvmwithdagger2.R
-import com.dew.edward.mvvmwithdagger2.common.viewmodel.Response
-import com.dew.edward.mvvmwithdagger2.common.viewmodel.Status
+import com.dew.edward.mvvmwithdagger2.model.Response
+import com.dew.edward.mvvmwithdagger2.model.Status
+import com.dew.edward.mvvmwithdagger2.viewmodel.LobbyViewModel
+import com.dew.edward.mvvmwithdagger2.viewmodel.LobbyViewModelFactory
 import dagger.android.AndroidInjection
 
 import kotlinx.android.synthetic.main.activity_main.*

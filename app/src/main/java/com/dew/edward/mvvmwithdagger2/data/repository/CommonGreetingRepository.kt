@@ -1,4 +1,4 @@
-package com.dew.edward.mvvmwithdagger2.common.domain.model
+package com.dew.edward.mvvmwithdagger2.data.repository
 
 import io.reactivex.Single
 

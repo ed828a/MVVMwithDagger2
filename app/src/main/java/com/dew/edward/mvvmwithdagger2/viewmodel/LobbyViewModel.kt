@@ -1,11 +1,11 @@
-package com.dew.edward.mvvmwithdagger2.lobby
+package com.dew.edward.mvvmwithdagger2.viewmodel
 
-import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
-import com.dew.edward.mvvmwithdagger2.common.domain.interactors.LoadCommonGreetingUseCase
-import com.dew.edward.mvvmwithdagger2.common.domain.interactors.LoadGreetingUseCase
-import com.dew.edward.mvvmwithdagger2.common.viewmodel.Response
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadCommonGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadLobbyGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.model.Response
 import com.dew.edward.mvvmwithdagger2.rx.SchedulersFacade
 import io.reactivex.disposables.CompositeDisposable
 

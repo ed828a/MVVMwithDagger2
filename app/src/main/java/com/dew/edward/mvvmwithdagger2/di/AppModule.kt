@@ -1,7 +1,7 @@
 package com.dew.edward.mvvmwithdagger2.di
 
 import android.app.Application
-import com.dew.edward.mvvmwithdagger2.common.domain.model.CommonGreetingRepository
+import com.dew.edward.mvvmwithdagger2.data.repository.CommonGreetingRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton

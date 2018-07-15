@@ -1,6 +1,6 @@
-package com.dew.edward.mvvmwithdagger2.lobby
+package com.dew.edward.mvvmwithdagger2.data.usecase
 
-import com.dew.edward.mvvmwithdagger2.common.domain.interactors.LoadGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.repository.LobbyGreetingRepository
 import io.reactivex.Single
 import javax.inject.Inject
 

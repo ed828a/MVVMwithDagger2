@@ -1,6 +1,9 @@
-package com.dew.edward.mvvmwithdagger2.lobby
+package com.dew.edward.mvvmwithdagger2.di
 
-import com.dew.edward.mvvmwithdagger2.common.domain.interactors.LoadCommonGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadCommonGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.usecase.LoadLobbyGreetingUseCase
+import com.dew.edward.mvvmwithdagger2.data.repository.LobbyGreetingRepository
+import com.dew.edward.mvvmwithdagger2.viewmodel.LobbyViewModelFactory
 import com.dew.edward.mvvmwithdagger2.rx.SchedulersFacade
 import dagger.Module
 import dagger.Provides
