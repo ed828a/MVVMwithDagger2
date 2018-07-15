@@ -8,8 +8,7 @@ import javax.inject.Inject
 /**
  * Created by Edward on 7/15/2018.
  */
-class LoadCommonGreetingUseCase @Inject constructor(
-        val greetingRepository: CommonGreetingRepository) : LoadGreetingUseCase {
+class LoadCommonGreetingUseCase(val greetingRepository: CommonGreetingRepository) : LoadGreetingUseCase {
 
     override fun execute(): Single<String> = greetingRepository.getGreeting()
 

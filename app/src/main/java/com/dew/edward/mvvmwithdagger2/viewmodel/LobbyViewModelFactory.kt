@@ -2,6 +2,7 @@ package com.dew.edward.mvvmwithdagger2.viewmodel
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
+import com.dew.edward.mvvmwithdagger2.data.repository.VideoLocalDataSource
 import com.dew.edward.mvvmwithdagger2.data.usecase.LoadCommonGreetingUseCase
 import com.dew.edward.mvvmwithdagger2.data.usecase.LoadLobbyGreetingUseCase
 import com.dew.edward.mvvmwithdagger2.rx.SchedulersFacade
@@ -13,7 +14,8 @@ import com.dew.edward.mvvmwithdagger2.rx.SchedulersFacade
 class LobbyViewModelFactory(
         val loadCommonGreetingUseCase: LoadCommonGreetingUseCase,
         val loadLobbyGreetingUseCase: LoadLobbyGreetingUseCase,
-        val schedulersFacade: SchedulersFacade
+        val schedulersFacade: SchedulersFacade,
+        val videoLocalDataSource: VideoLocalDataSource
 ): ViewModelProvider.Factory {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
@@ -21,7 +23,8 @@ class LobbyViewModelFactory(
             return LobbyViewModel(
                     loadCommonGreetingUseCase,
                     loadLobbyGreetingUseCase,
-                    schedulersFacade) as T
+                    schedulersFacade,
+                    videoLocalDataSource) as T
         } else {
             throw IllegalArgumentException("Unknow ViewModel Class")
         }

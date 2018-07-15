@@ -2,6 +2,7 @@ package com.dew.edward.mvvmwithdagger2.viewmodel
 
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
+import com.dew.edward.mvvmwithdagger2.data.repository.VideoLocalDataSource
 import com.dew.edward.mvvmwithdagger2.data.usecase.LoadCommonGreetingUseCase
 import com.dew.edward.mvvmwithdagger2.data.usecase.LoadGreetingUseCase
 import com.dew.edward.mvvmwithdagger2.data.usecase.LoadLobbyGreetingUseCase
@@ -16,11 +17,15 @@ import io.reactivex.disposables.CompositeDisposable
 class LobbyViewModel(
         val loadCommonGreetingUseCase: LoadCommonGreetingUseCase,
         val loadLobbyGreetingUseCase: LoadLobbyGreetingUseCase,
-        val schedulersFacade: SchedulersFacade): ViewModel() {
+        val schedulersFacade: SchedulersFacade,
+        val videoLocalDataSource: VideoLocalDataSource): ViewModel() {
 
     val disposables: CompositeDisposable = CompositeDisposable()
 
     val response: MutableLiveData<Response> = MutableLiveData()
+
+
+
 
     override fun onCleared() {
         disposables.clear()
